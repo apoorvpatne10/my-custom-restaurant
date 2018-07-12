@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+{{ block.super }}
+<h1>hey there</h1>
+<p>
+    {% for item in some_list %}
+        {% if item|divisibleby:"2" %}
+            Even it is!
+        {% endif %}
+        {{ item }} <br/>
+    {% endfor %}
+</p>
+{% endblock %}
