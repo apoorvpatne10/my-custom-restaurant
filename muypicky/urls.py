@@ -3,8 +3,8 @@ from django.contrib import admin
 from restaurants import views
 from django.views.generic import TemplateView
 from django.contrib.auth.views import LoginView, LogoutView
-from profiles.views import ProfileFollowToggle, RegisterView, activate_user_view
 from menus.views import HomeView
+from profiles.views import ProfileFollowToggle, RegisterView, activate_user_view
 
 
 urlpatterns = [
